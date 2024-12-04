@@ -1,0 +1,118 @@
+body {
+  background-color: #1d1e20;
+  font-family: "Arial", sans-serif;
+}
+h1 {
+  color: rgb(208, 200, 200);
+  font-size: 30px;
+  text-align: center;
+}
+#Profile-pic {
+  position: absolute; /* Stick to the top of the parent */
+  top: 6%; /* Align to the top border of the parent */
+  left: 110px; /* Align to the left side with a small margin */
+  border-radius: 10%; /* Rounded corners for the picture */
+  display: block;
+  filter: brightness(85%);
+  width: 400px;
+  height: 400px;
+}
+
+#Profile-pic:hover {
+  cursor: pointer;
+  transform: rotateY(360deg) scale(1.1);
+  filter: brightness(80%);
+  transition: transform 2s  ;
+}
+#Profile-box {
+  color: rgba(240, 248, 255, 0.405);
+  position: absolute; /* Positioned relative to #main_box */
+  top: 20%; /* Center vertically relative to #main_box */
+  left: 70%; /* Adjust position horizontally */
+  transform: translate(-50%, -50%); /* Center the box more naturally */
+  width: 40%;
+  border: 0px solid rgb(100, 114, 114);
+}
+
+#My-MainInfo{
+    color: #b03232;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    font-weight: bold;
+}
+#aboutme{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#main_box {
+  position: relative;
+  margin: 14px auto;
+  align-items: center;
+  width: 80%;
+  height: 190vh; /* Parent height */
+  padding: 20px;
+  border: 3px solid rgb(100, 114, 114);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+}
+
+#Skill-logos{
+  position: inherit;
+  /* margin-top: 390px; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  gap: 100px;
+  
+  
+}
+#html-logo{
+  width: 140px;
+  height: 140px;
+}
+#css-logo{
+  width: 140px;
+  height: 140px;
+}
+#c-logo{
+  margin-top: 14px;
+  width: 110px;
+  height: 126px;  
+}
+.qualification{
+  margin-top: 180px;
+  position:absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.qualification-item{
+  border: 2px solid rgb(100, 114, 114);
+  border-radius: 10px;
+  padding: 10px;
+}
+.nounderline {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Optional: Makes the link color the same as the parent */
+}
+.nounderline:hover {
+  cursor: pointer;
+  color: #e5c9c9; /* Changes the color on hover */
+}
+.contact{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgba(240, 248, 255, 0.705);
+  border: 4px solid rgb(100, 114, 114);
+  width: 80%;
+  margin-left: 24px;
+  border-radius: 20px;
+  padding: 20px;
+}
+#mycontact{
+  text-align: center;
+  font-size: 30px;
+  color: rgba(240, 248, 255, 0.899);
+}
+#contact{
+  padding: 10px;
+  line-height: 44px;
+}
